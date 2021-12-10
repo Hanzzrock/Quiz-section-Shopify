@@ -1,0 +1,118 @@
+<div id="shopify-section-1598475193188" class="shopify-section"><section class="have_questions_section have_questions_section-1598475193188">
+  <div class="containerx">
+     <div class="img">
+    
+       {{ section.settings.Quiz-image | img_url: '500x469' | img_tag }}
+    </div>
+    <div class="have_questions_section_content">
+        <h2>{{section.settings.quiz-text}}</h2>
+        <p>{{section.settings.content-txt}}
+</p>
+        <a href="{{section.settings.btn_url}}" class="btn">{{section.settings.button_txt}}</a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+
+{% schema %}
+  {
+    "name": " New Quiz",
+    "settings": [
+{
+      "type": "image_picker",
+      "id": "Quiz-image",
+      "label": "Image"    
+    },
+{
+      "type": "text",
+      "id": "quiz-text",
+      "label": "Heading",
+      "default": "HAIR QUIZ"
+    },
+{
+      "type": "text",
+      "id": "content-txt",
+      "label": "Subtitle",
+      "default": "Get your dream hair based on your true hair type"
+    },
+{
+      "type": "text",
+      "id": "button_txt",
+      "label": "Button Text",
+      "default": "TAKE QUIZ"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "button link"
+    }
+],
+     "presets": [
+    {
+      "category": "image",
+      "name": "New Quiz",
+      "settings": {
+       
+      }
+    }
+  ]
+
+  }
+{% endschema %}
+
+<style>
+/*! CSS Used from: https://cdn.shopify.com/s/files/1/0386/4136/9132/t/68/assets/layout.theme.css?v=11986831156828560444 */
+img{height:auto;}
+a{-ms-touch-action:manipulation;touch-action:manipulation;}
+*,:after,:before{box-sizing:border-box;margin:0;padding:0;}
+img{margin:0;max-width:100%;}
+
+h2{font-size:36px;line-height:1.35;}
+@media screen and (max-width:768px){
+h2{font-size:24px;line-height:1.25;}
+}
+h2{font-weight:700;}
+.have_questions_section{position:relative;background-color:#2d006a;margin-top:115px;}
+@media screen and (max-width:768px){
+.have_questions_section{margin-top:0;}
+}
+.have_questions_section .containerx{max-width:1130px;position:relative;z-index:2;display:-ms-flexbox;display:flex;-ms-flex-align:end;align-items:flex-end;-ms-flex-pack:justify;justify-content:space-between;}
+@media screen and (max-width:991px){
+.have_questions_section .containerx{-ms-flex-direction:column-reverse;flex-direction:column-reverse;-ms-flex-align:center;align-items:center;-ms-flex-pack:initial;justify-content:initial;}
+}
+.have_questions_section .containerx .img{margin-top:-155px;}
+@media screen and (max-width:991px){
+.have_questions_section .containerx .img{margin-top:-16px;}
+}
+.have_questions_section_content{padding-top:70px;max-width:540px;width:100%;margin-left:auto;margin-bottom:70px;}
+@media screen and (max-width:991px){
+.have_questions_section_content{max-width:600px;margin-right:auto;text-align:center;margin-bottom:35px;padding-top:42px;}
+}
+.have_questions_section_content h2{margin-bottom:22px;padding-right:30px;color:#fff !important;}
+@media screen and (max-width:991px){
+.have_questions_section_content h2{padding-right:0;margin-bottom:16px;}
+}
+.have_questions_section_content p{margin-bottom:25px;color:#fff;text-transform: uppercase;}
+@media screen and (max-width:991px){
+.have_questions_section_content p{margin-bottom:16px;}
+}
+.have_questions_section_content a.btn{margin-left:0;}
+@media screen and (max-width:991px){
+.have_questions_section_content a.btn{margin-right:auto;margin-left:auto;}
+}
+@media print{
+p{orphans:3;widows:3;}
+}
+*{outline:0;}
+
+.btn,a.btn{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;min-width:180px;width:fit-content;white-space:nowrap;height:48px;background-color:#ffa400;font-size:13px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;line-height:29px;text-decoration:none;text-align:center;color:#fff;padding:0 44px;transition:transform .4s ease;font-family: 'Oswald';}
+.btn:hover,a.btn:hover{transform:scale(.9);}
+.containerx{max-width:1188px;}
+.containerx{padding-left:24px;padding-right:24px;width:100%;margin-left:auto;margin-right:auto;}
+</style>
+
+{% javascript %}
+{% endjavascript %}
